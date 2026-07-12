@@ -7,27 +7,21 @@ function Stopwatch() {
     const timerRef = useRef(null);
 
     function startTimer() {
-
         if (timerRef.current !== null) return;
 
         timerRef.current = setInterval(() => {
             setTime((prev) => prev + 10);
         }, 10);
-
     }
 
     function stopTimer() {
-
         clearInterval(timerRef.current);
         timerRef.current = null;
-
     }
 
     function resetTimer() {
-
         stopTimer();
         setTime(0);
-
     }
 
     const minutes = String(Math.floor(time / 60000)).padStart(2, "0");
