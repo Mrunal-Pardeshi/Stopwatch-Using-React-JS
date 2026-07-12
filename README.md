@@ -4,7 +4,7 @@ A simple and modern stopwatch built with React.js. This project was created to p
 
 ## 🚀 Live Demo
 
-🔗 stopwatch-using-react-js-orcin.vercel.app
+🔗 https://stopwatch-using-react-js-orcin.vercel.app/
 
 ## ✨ Features
 
