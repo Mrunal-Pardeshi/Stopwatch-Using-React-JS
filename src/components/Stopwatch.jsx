@@ -5,6 +5,7 @@ function Stopwatch() {
 
     const [time, setTime] = useState(0);
     const timerRef = useRef(null);
+    const [laps, setlaps] = useState([]);
 
     function startTimer() {
         if (timerRef.current !== null) return;
@@ -22,6 +23,14 @@ function Stopwatch() {
     function resetTimer() {
         stopTimer();
         setTime(0);
+        setlaps([]);
+    }
+
+    function lapTimer() {
+        if (time === 0) return;
+
+        const lap = `${minutes}:${seconds}:${milliseconds}`
+        setlaps((prev) => [...prev, lap]);
     }
 
     const minutes = String(Math.floor(time / 60000)).padStart(2, "0");
@@ -54,6 +63,30 @@ function Stopwatch() {
                     <button className="reset" onClick={resetTimer}>
                         Reset
                     </button>
+
+                    <button className="lap" onClick={lapTimer}>
+                        Lap
+                    </button>
+
+                </div>
+
+
+                <div className="lap-list">
+
+                {laps.length > 0 && (
+                    <h2 className="lap-heading">Lap History</h2>
+                )}
+                    {laps.map((lap, index) => (
+
+                        <div className="lap-item" key={index}>
+
+                            <span>Lap {index + 1}</span>
+
+                            <span>{lap}</span>
+
+                        </div>
+
+                    ))}
 
                 </div>
 

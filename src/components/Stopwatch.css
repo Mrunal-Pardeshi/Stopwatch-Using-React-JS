@@ -74,6 +74,10 @@ button{
     background:#ef4444;
 }
 
+.lap{
+    background:#3b82f6;
+}
+
 button:hover{
     transform:translateY(-4px);
     box-shadow:0 10px 20px rgba(0,0,0,.25);
@@ -81,6 +85,54 @@ button:hover{
 
 button:active{
     transform:scale(.96);
+}
+
+.lap-list{
+    margin-top:30px;
+    max-height:250px;
+    overflow-y:auto;
+    padding-right:5px;
+}
+
+.lap-list::-webkit-scrollbar{
+    width:6px;
+}
+
+.lap-list::-webkit-scrollbar-thumb{
+    background:rgba(255,255,255,.3);
+    border-radius:10px;
+}
+
+.lap-heading{
+    color: white;
+}
+
+.lap-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 18px;
+    margin-bottom:12px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:12px;
+    color:white;
+    transition:0.3s ease;
+}
+
+.lap-item:hover{
+    background:rgba(255,255,255,0.15);
+    transform:translateY(-2px);
+}
+
+.lap-item span:first-child{
+    font-weight:600;
+    color:#cbd5e1;
+}
+
+.lap-item span:last-child{
+    font-weight:700;
+    letter-spacing:1px;
 }
 
 @media(max-width:600px){
@@ -103,6 +155,35 @@ button{
 
 .buttons{
     flex-direction:column;
+}
+
+}
+
+@media(max-width:600px){
+
+.card{
+    padding:30px 20px;
+}
+
+.display{
+    font-size:2.6rem;
+}
+
+.card h1{
+    font-size:2rem;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+button{
+    width:100%;
+}
+
+.lap-item{
+    padding:12px;
+    font-size:0.9rem;
 }
 
 }
