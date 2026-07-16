@@ -1,16 +1,62 @@
-# React + Vite
+# ⏱️ React Stopwatch
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple and modern stopwatch built with React.js. This project was created to practice React fundamentals, especially the `useState` and `useRef` hooks, while also focusing on creating a clean, responsive, and user-friendly interface.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://stopwatch-using-react-js-orcin.vercel.app/
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Start, Pause, and Reset functionality
+- Accurate time tracking with milliseconds
+- Built using React Hooks (`useState` and `useRef`)
+- Clean glassmorphism-inspired UI
+- Fully responsive across desktop, tablet, and mobile devices
+- Smooth button hover and click animations
 
-## Expanding the Oxlint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React.js
+- JavaScript (ES6+)
+- CSS3
+- HTML5
+
+## 📚 What I Learned
+
+While building this project, I gained a better understanding of:
+
+- Managing state with `useState`
+- Using `useRef` to store mutable values without causing re-renders
+- Working with `setInterval()` and `clearInterval()`
+- Handling user events in React
+- Creating responsive layouts using CSS
+- Structuring React components in a clean and reusable way
+
+## 📂 Project Structure
+
+```
+src/
+│── components/
+│   ├── Stopwatch.jsx
+│   └── Stopwatch.css
+│
+├── App.jsx
+└── main.jsx
+```
+
+## 💡 Future Improvements
+
+- Add Lap Timer functionality
+- Dark/Light mode toggle
+- Keyboard shortcuts (Start/Pause and Reset)
+- Sound effects
+- Save lap history using Local Storage
+
+## 🤝 Feedback
+
+If you have any suggestions or ideas to improve this project, feel free to open an issue or submit a pull request. Feedback is always appreciated!
+
+---
+
+Made with ❤️ using React.js.
